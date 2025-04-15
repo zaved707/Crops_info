@@ -6,7 +6,7 @@
 
 ## Build Steps
 
-###1. clone this repo
+### 1. clone this repo
 
 1. `git clone <link/to/this/repo>`
 2. go to project directory do npm install
