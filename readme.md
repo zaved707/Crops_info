@@ -6,11 +6,21 @@
 
 ## Build Steps
 
-### 1. clone this repo
+1. clone this repo
 
-1. `git clone <link/to/this/repo>`
+   ```bash
+   git clone https://github.com/zaved707/Crops_info.git
+   ```
 2. go to project directory do npm install
+
+   ```bash
+   cd Crops_info
+   ```
 3. then do npm expo start
+
+   ```bash
+   npx expo start
+   ```
 4. and use the expo go app from the play store to run.
 
 ## To Make apk
