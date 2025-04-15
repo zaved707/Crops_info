@@ -39,7 +39,10 @@ export default function App() {
           <BigButton startIcon= 'rainy-sharp' text='Kharif'href='/seasons/kharif/main'  height='70' color={theme.colors.primary}/>
         </View>
        
-        <Image style={{ marginTop:'10%' ,borderRadius:20, width: "90%", height: 350}} source={require('../assets/plant1.jpg')} />
+        <Image style={{ marginTop:'10%' ,borderRadius:20, width: "90%", height: 350}} source={{
+          uri: 'https://reactnative.dev/img/tiny_logo.png'}} />
+
+          {/* <Image style={{ marginTop:'10%' ,borderRadius:20, width: "90%", height: 350}} source={require('../assets/plant1.jpg')} /> */}
        
       </View>
    
