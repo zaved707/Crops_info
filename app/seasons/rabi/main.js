@@ -7,9 +7,8 @@ export default function rabi() {
   const theme = useTheme();
   return (
     <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
-      <AppBar text="Rabi" showSettings= {false}/>
-      <View style={{ gap: 20 }}>
-      
+      <AppBar text="Rabi" showSettings={false} />
+      <View style={{ gap: 20, paddingTop: 20 }}>
         <BigButton
           text="Wheat"
           startIcon="leaf"

@@ -1,4 +1,5 @@
-import { StyleSheet,Pressable, Text, StatusBar, Image, View, useColorScheme } from "react-native";
+import { StyleSheet,Pressable, Text, Image, View, useColorScheme } from "react-native";
+
 import {Link , router} from "expo-router"
 import AppBar from "../components/AppBar.js";
 import BigButton from "../components/Button.js";
@@ -9,6 +10,7 @@ export default function App() {
   return (
     
       <View
+      
         style={{
           backgroundColor: theme.colors.background,
           flex: 1,
@@ -16,7 +18,8 @@ export default function App() {
           alignItems: "center",
         }}
       >
-        <StatusBar />
+      
+        {/* <StatusBar /> */}
         <AppBar text='Select Season'/>
         
         <View
@@ -39,11 +42,11 @@ export default function App() {
           <BigButton startIcon= 'rainy-sharp' text='Kharif'href='/seasons/kharif/main'  height='70' color={theme.colors.primary}/>
         </View>
        
-        <Image style={{ marginTop:'10%' ,borderRadius:20, width: "90%", height: 350}} source={{
-          uri: 'https://reactnative.dev/img/tiny_logo.png'}} />
+        {/* <Image style={{ marginTop:'10%' ,borderRadius:20, width: "90%", height: 350}} source={{
+          uri: 'https://i.redd.it/5xnzj2k3b5791.jpg'}} /> */}
 
-          {/* <Image style={{ marginTop:'10%' ,borderRadius:20, width: "90%", height: 350}} source={require('../assets/plant1.jpg')} /> */}
-       
+          <Image style={{ marginTop:'10%' ,borderRadius:20, width: "90%", height: 350}} source={require('../assets/plant1.jpg')} />
+         
       </View>
    
   );

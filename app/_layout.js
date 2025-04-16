@@ -1,7 +1,7 @@
 import { Stack } from "expo-router";
-import { View } from "react-native";
+import { StatusBar,View } from "react-native";
 import { useTheme, PaperProvider } from "react-native-paper";
-
+// import { StatusBar } from 'expo-status-bar';
 export default function RootLayout() {
   const theme = {
     colors: {
@@ -48,7 +48,9 @@ export default function RootLayout() {
     }, // Copy it from the color codes  colors: yourGeneratedLightOrDarkScheme.colorsscheme and then use it here
   };
   return (
+    
     <PaperProvider theme={theme}>
+         <StatusBar backgroundColor={theme.colors.background} />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
         <Stack
           screenOptions={{

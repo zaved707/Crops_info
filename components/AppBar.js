@@ -18,7 +18,7 @@ export default function header(props) {
         justifyContent: "space-between",
         alignItems: "center",
         borderBottomWidth: 0.5,
-        paddingLeft: 10,
+        paddingHorizontal: 10,
         borderColor: theme.colors.outline,
       }}
     >
@@ -32,9 +32,9 @@ export default function header(props) {
       </Text>
       {showSettings && (
         <View style={{ display: "flex", flexDirection: "row" }}>
-          <CircleIconButton icon="settings-outline" />
+          <CircleIconButton href="/settings"icon="information" />
 
-          <CircleIconButton icon="ellipsis-vertical" />
+         
         </View>
       )}
     </View>
